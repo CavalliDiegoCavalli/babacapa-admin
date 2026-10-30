@@ -34,6 +34,10 @@ body{-webkit-user-select:text;user-select:text}
 .pt-main{display:flex;flex-direction:column;min-width:0;min-height:0}
 .pt-head{display:flex;align-items:center;gap:14px;padding:16px 28px;border-bottom:1px solid var(--line);background:var(--surface)}
 .pt-head h1{font-family:var(--display);font-stretch:var(--display-w);font-size:28px;margin:0;line-height:1}
+/* Utenti: interruttore Mercato/Test accanto al titolo (Diego, 2026-10-30) */
+.pt-mt{display:inline-flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.pt-mt button{height:32px;padding:0 14px;border:0;border-radius:999px;background:none;color:var(--muted);font:inherit;font-weight:700;font-size:14px;cursor:pointer}
+.pt-mt button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
 .pt-main .adm{flex:1;min-height:0}
 .pt-main .adm>*{width:100%;max-width:1480px;margin-left:auto;margin-right:auto}
 .pt-foot{padding:8px 28px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);background:var(--surface)}
@@ -55,6 +59,7 @@ body{-webkit-user-select:text;user-select:text}
   .pt-sel .pt-gl{display:none}
   .pt-f{flex:1 1 180px;padding:0}.pt-tg{padding:0}.pt-sel small{flex:1 1 100%;padding:0}
   .pt-head{padding:12px 16px}.pt-head h1{font-size:24px}
+  .pt-head{flex-wrap:wrap;row-gap:10px}.pt-head:has(.pt-mt) .amut{flex:1 1 100%;order:5}
   .pt-foot{padding:8px 16px}
 }
 .pt-login .al{margin-top:6vh}
@@ -64,6 +69,7 @@ body{-webkit-user-select:text;user-select:text}
 .pt-login .legal{margin:14px 0 0;text-align:center;color:var(--muted);font-size:12.5px}
 
 /* Utenti (dalla 1.6.0): stessa tabella del menu Utenti di Basketin Platform (platform.css), con le soglie spostate della barra laterale */
+.ufilts{display:flex;flex-direction:column;gap:8px;margin-bottom:12px}
 .ufilt{display:flex;flex-wrap:wrap;gap:8px}
 .ufb{height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);font:inherit;font-weight:700;font-size:14px;cursor:pointer}
 .ufb b{color:var(--ink);margin-left:2px}
