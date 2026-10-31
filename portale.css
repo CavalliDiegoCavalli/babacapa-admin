@@ -1,4 +1,4 @@
-/* Basketin Platform · portale admin. Copyright (c) 2026 Diego Cavalli. Tutti i diritti riservati.
+/* Babacapa · portale admin. Copyright (c) 2026 Diego Cavalli. Tutti i diritti riservati.
    Si appoggia a styles.css dell'app (colori, pulsanti, card, campi) e a questo guscio: menu laterale
    sullo schermo del computer, barra in alto sugli schermi stretti. */
 body{-webkit-user-select:text;user-select:text}
@@ -12,6 +12,10 @@ body{-webkit-user-select:text;user-select:text}
 .pt-brand img{width:34px;height:34px;object-fit:contain}
 .pt-brand div{display:flex;flex-direction:column;line-height:1.15}
 .pt-brand b{font-size:15px}.pt-brand small{color:var(--muted);font-size:12px}
+/* scritta Babacapa in tracciati (Diego, 2026-10-31): reverse nel tema scuro */
+.pt-word{display:block;line-height:0}.pt-word img{height:16px;width:auto}.pt-word .rev{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pt-word img{display:none}:root:not([data-theme="light"]) .pt-word .rev{display:block}}
+:root[data-theme="dark"] .pt-word img{display:none}:root[data-theme="dark"] .pt-word .rev{display:block}
 .pt-nav{display:flex;flex-direction:column;gap:2px}
 .pt-gl{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:9px 10px 3px}
 .pt-nav button{border:0;background:none;text-align:left;height:32px;padding:0 12px;border-radius:8px;font-weight:700;font-size:14px;color:var(--ink)}
